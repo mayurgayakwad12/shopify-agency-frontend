@@ -1,0 +1,54 @@
+.image-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+    overflow: none;
+    height: 380px;
+  }
+  
+  .slider-container {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-card {
+    min-width: 188px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 188px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  

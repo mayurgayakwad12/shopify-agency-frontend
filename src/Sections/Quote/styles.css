@@ -1,0 +1,54 @@
+.quote-container {
+    align-items: center;
+	color: #060237;
+	display: flex;
+	font-size: 48px;
+	font-weight: 700;
+	gap: 400px;
+	justify-content: center;
+	letter-spacing: -0.96px;
+	line-height: 57.6px;
+	text-align: center;
+	padding: 70px 150px;
+	border-top: 1px solid #d3c3f8;
+	border-bottom: 1px solid #d3c3f8;
+	overflow: hidden;
+}
+
+.first-content  {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .quote-container {
+        padding: 70px 50px;
+		overflow: hidden;
+		white-space: nowrap;
+    }
+
+	.marquee {
+		display: flex;
+		width: 200%;
+		overflow: hidden;
+		white-space: nowrap;
+		position: relative;
+	}
+
+	.marquee-content {
+		display: flex;
+		min-width: 100%;
+		padding-right: 250px;
+		animation: marquee-scroll 10s linear infinite;
+	}
+
+	@keyframes marquee-scroll {
+		from {
+			transform: translateX(0%);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+}

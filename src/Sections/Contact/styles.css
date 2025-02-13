@@ -1,0 +1,32 @@
+.contact-container {
+    display: flex;
+    background-color: #f6f3ff;
+    padding: 85px 120px 70px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 40px
+
+}
+
+
+.contact-buttons {
+    display: flex;
+    gap: 14px
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-buttons {
+     flex-direction: column;
+     width: 100%
+    }
+    .contact-container {
+        padding: 80px 16px;
+        align-items: start; 
+    }
+    /* .talk-to-us-btn-conatainer {
+        width: 100%
+    } */
+}

@@ -1,0 +1,82 @@
+
+.service-card-conatiner {
+     display: flex;
+     background-image: url('https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/670e190f66ba04562f341318_Vector%202425.png');
+     background-repeat: repeat-x;
+     justify-content: space-evenly;
+     background-position: center;
+     background-size: contain;
+     gap: 20px
+}
+.service-card-d2c {
+     display: flex;
+     flex-direction: column;
+     border: 1px solid #ddd;
+     padding: 20px;
+     margin: 10px;
+     background-color: #f6f3ff;
+     border-color: #d3c3f8;
+     border-radius: 16px ;
+     min-width: 343px;
+     width: 100%;
+}
+ .s-card-1-d2c {
+     max-width: 350px;
+     margin: 0 auto;
+}
+ .service-details-d2c {
+     margin-bottom: 20px;
+}
+ .image-208 {
+     width: 160px;
+     height: 110px;
+}
+
+ .sd-title-d2c {
+     margin-bottom: 10px;
+}
+ .text-block-79 {
+     font-size: 18px;
+     font-weight: bold;
+     color: #060237;
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 43.2px;
+     text-align: left;
+}
+ .sd-features-d2c {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding-left:10px
+}
+ .sd-features--d2c {
+     display: flex;
+     align-items: center;
+     margin: 10px 0;
+     gap: 14px
+}
+ .sd-features--d2c img {
+     width: 24px;
+     height: 24px;
+}
+ .text-block-37 {
+     font-size: 16px;
+     color: #060237;
+     font-weight:300;
+     text-align:left;
+     font-family: Plus Jakarta Sans,sans-serif
+}
+ 
+
+@media screen and (max-width: 1500px) {
+     .services-card-container {
+       overflow: scroll;
+       scrollbar-width: none;
+       margin: 0px 24px !important;
+       padding: 0 0px !important;
+   }
+   .service-card-d2c {
+     margin: 0px !important;
+}
+}

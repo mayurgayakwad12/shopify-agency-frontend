@@ -1,0 +1,41 @@
+.case-study-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: url('https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/670e190f66ba04562f341318_Vector%202425.png');
+    background-repeat: repeat-x;
+    justify-content: space-evenly;
+    background-position: center;
+    background-size: contain;
+}
+
+.case-study-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px
+  }
+  
+  .case-study-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: 568px;
+    height : 637px
+  }
+
+
+
+@media screen and (max-width: 992px) {
+
+  .case-study-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: row
+  } 
+
+  .case-study-image {
+    width: 100%;
+    height: auto;
+  }
+}
+  

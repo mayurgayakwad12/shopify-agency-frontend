@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 992px) {
     .quote-container {
-        padding: 70px 50px;
+        padding: 70px 16px;
 		overflow: hidden;
 		white-space: nowrap;
     }

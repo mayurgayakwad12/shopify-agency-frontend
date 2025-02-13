@@ -1,5 +1,9 @@
 import React from 'react';
-import './styles.css'; // Importing the CSS file
+import './styles.css';
+
+const cursorStyle = {
+	cursor: 'pointer'
+}
 
 const Footer = ({ setPage }) => {
 	return (
@@ -45,9 +49,10 @@ const Footer = ({ setPage }) => {
 					<div>
 						<h4 className="footer-heading">Products</h4>
 						<div className="right-products">
-							<div>Shopify Store Build</div>
-							<div>Custom Landing Pages</div>
+							<div style={cursorStyle}>Shopify Store Build</div>
+							<div style={cursorStyle}>Custom Landing Pages</div>
 							<div
+								style={cursorStyle}
 								onClick={() => {
 									window.scrollTo({ top: 0, behavior: 'smooth' });
 									setPage('caseStudies');

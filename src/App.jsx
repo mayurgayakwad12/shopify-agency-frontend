@@ -63,43 +63,43 @@ function App() {
 	}
 
 	return (
-		<div className="page-container">
-			<BurgerMenuItems {...propsForBurgerMenu} />
-			<div className="page-header-conatiner">
-				<div className="destop-header-view">
-					<div className="logo" onClick={() => setPage('home')}>
-						boco
-					</div>
-					<NavbarButtons page={page} setPage={setPage} />
-					<TalkToUsButton />
-				</div>
-				<div className="mobile-header-view">
-					<div
-						style={{
-							fontSize: '28px',
-							cursor: 'pointer',
-							zIndex: 1
-						}}
-						onClick={() => setMenuActive((prev) => !prev)}
-					>
-						☰
-					</div>
-					<div
-						className="logo"
-						onClick={() => {
-							setPage('home')
-							setMenuActive(false)
-						}}
-					>
-						boco
-					</div>
-					<DirectionIcon />
-				</div>
-			</div>
-			{page === 'home' && <Home />}
-			{page === 'caseStudies' ? <CaseStudiesPage /> : <></>}
-		</div>
-	)
+    <div className="page-container">
+      <BurgerMenuItems {...propsForBurgerMenu} />
+      <div className="page-header-conatiner">
+        <div className="destop-header-view">
+          <div className="logo" onClick={() => setPage('home')}>
+            boco
+          </div>
+          <NavbarButtons page={page} setPage={setPage} />
+          <TalkToUsButton />
+        </div>
+        <div className="mobile-header-view">
+          <div
+            style={{
+              fontSize: '28px',
+              cursor: 'pointer',
+              zIndex: 1,
+            }}
+            onClick={() => setMenuActive((prev) => !prev)}
+          >
+            ☰
+          </div>
+          <div
+            className="logo"
+            onClick={() => {
+              setPage('home');
+              setMenuActive(false);
+            }}
+          >
+            boco
+          </div>
+          <DirectionIcon />
+        </div>
+      </div>
+      {page === 'home' && <Home setPage={setPage} />}
+      {page === 'caseStudies' ? <CaseStudiesPage /> : <></>}
+    </div>
+  );
 }
 
 export default App

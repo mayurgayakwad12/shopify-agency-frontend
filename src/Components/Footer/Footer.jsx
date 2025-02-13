@@ -1,7 +1,7 @@
-import React from 'react'
-import './styles.css' // Importing the CSS file
+import React from 'react';
+import './styles.css'; // Importing the CSS file
 
-const Footer = () => {
+const Footer = ({ setPage }) => {
 	return (
 		<section className="footer">
 			<div className="footer-container">
@@ -11,12 +11,13 @@ const Footer = () => {
 						<div className="logo">boco</div>
 					</a>
 					<div className="footer-description">
-						We are driven by quality and we’re 0 bullshit. If you
-						think the same way, we love a good chat.
+						We are driven by quality and we’re 0 bullshit. If you think the same way, we love a good
+						chat.
 					</div>
 					<div className="social-icons">
 						<a
 							href="https://www.instagram.com/boco.agency/"
+							target="_blank"
 							className="social-link"
 						>
 							<img
@@ -27,6 +28,7 @@ const Footer = () => {
 						</a>
 						<a
 							href="https://www.linkedin.com/company/boco-ventures/"
+							target="_blank"
 							className="social-link"
 						>
 							<img
@@ -45,7 +47,14 @@ const Footer = () => {
 						<div className="right-products">
 							<div>Shopify Store Build</div>
 							<div>Custom Landing Pages</div>
-							<div>Case Studies</div>
+							<div
+								onClick={() => {
+									setPage('caseStudies');
+									window.scrollTo({ top: 0, behavior: 'smooth' });
+								}}
+							>
+								Case Studies
+							</div>
 						</div>
 					</div>
 				</div>
@@ -57,7 +66,7 @@ const Footer = () => {
 				<div className="footer-text">© Copyright, BOCO 2024</div>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default Footer
+export default Footer;

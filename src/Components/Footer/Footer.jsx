@@ -49,8 +49,8 @@ const Footer = ({ setPage }) => {
 							<div>Custom Landing Pages</div>
 							<div
 								onClick={() => {
-									setPage('caseStudies');
 									window.scrollTo({ top: 0, behavior: 'smooth' });
+									setPage('caseStudies');
 								}}
 							>
 								Case Studies

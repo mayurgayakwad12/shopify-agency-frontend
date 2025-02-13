@@ -38,8 +38,8 @@
 
 	.marquee-content {
 		display: flex;
-		min-width: 100%;
-		padding-right: 250px;
+		/* min-width: 100%;
+		padding-right: 250px; */
 		animation: marquee-scroll 10s linear infinite;
 	}
 

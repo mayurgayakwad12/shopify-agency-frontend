@@ -29,8 +29,8 @@ const StarDivider = () => (
 						data-label-id="0"
 					/>
 				))}
-			{'  '}
-			90+ Brands & Counting
+			
+			&nbsp; 90+ Brands & Counting
 		</div>
 		<div className="star-right-divider"></div>
 	</div>

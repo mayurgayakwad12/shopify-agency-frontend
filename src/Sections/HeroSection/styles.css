@@ -11,12 +11,12 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  padding: 0px 0px 109px 120px;
+  padding: 0px 0px 0px 120px;
 }
 
 .hero-left {
   flex: 1;
-  margin-top: 109px;
+  margin: 109px 0px;
 }
 
 .hero-title {
@@ -176,7 +176,9 @@
 
   .hero-left {
     flex: 1;
-    margin-top: 0px !important;
+    /* margin-top: 0px !important; */
+    margin: 0px 0px !important;
+
   }
 }
 
@@ -204,4 +206,5 @@
   .hero-image {
     display: none;
   }
+  
 }

@@ -1,19 +1,18 @@
-import ServiceCard from '../../Components/ServicesCards/ServicesCards'
+import ServiceCard from '../../Components/ServicesCards/ServicesCards';
 
-const Services = () => {
-	return (
-		<div className="shopify-container">
-			<div className="shopify-header">
-				<div className="hero-title">
-					Enhance customer experience <br /> by focusing on the
-					details that matters most
-				</div>
-			</div>
-			<div className='services-card-container'>
-				<ServiceCard />
-			</div>
-		</div>
-	)
-}
+const Services = ({ serviceCards }) => {
+  return (
+    <div className="service-container">
+      <div className="shopify-header">
+        <div className="hero-title">
+          Enhance customer experience <br /> by focusing on the details that matters most
+        </div>
+      </div>
+      <div className="services-card-container">
+        <ServiceCard serviceCards={serviceCards} />
+      </div>
+    </div>
+  );
+};
 
-export default Services
+export default Services;

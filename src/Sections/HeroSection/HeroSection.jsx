@@ -57,15 +57,15 @@ const HeroSection = () => {
 						src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop.png"
 						loading="eager"
 						sizes="(max-width: 767px) 100vw, (max-width: 991px) 61vw, 609px"
-						srcset="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-500.png 500w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-800.png 800w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-1080.png 1080w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-1600.png 1600w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop.png 1827w"
+						srcSet="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-500.png 500w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-800.png 800w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-1080.png 1080w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop-p-1600.png 1600w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c167178be759471f6168_Hero%20Section%20Desktop.png 1827w"
 						alt=""
-						class="hero-image"
+						className="hero-image"
 					/>
 					<img
 						src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section.png"
 						loading="lazy"
 						sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 100vw"
-						srcset="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-500.png 500w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-800.png 800w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-1080.png 1080w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section.png 1468w"
+						srcSet="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-500.png 500w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-800.png 800w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section-p-1080.png 1080w, https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729c1658b96e961ea3c6b9e_Hero%20Section.png 1468w"
 						alt=""
 						className="hero-image-mobile-view"
 					/>

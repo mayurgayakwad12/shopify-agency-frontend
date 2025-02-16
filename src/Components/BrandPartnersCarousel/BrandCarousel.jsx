@@ -9,7 +9,7 @@ const BrandCarousel = ({ brandsLogos }) => {
           {[...brandsLogos, ...brandsLogos].map((brand, index) => (
             <div className="brand-item" key={index}>
               <img
-                src={`${'https://backend-with-strapi-prjd.onrender.com'}${brand?.logo?.url}`}
+                src={brand.src}
                 alt={brand.name}
                 loading="eager"
               />

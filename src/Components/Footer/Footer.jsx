@@ -2,14 +2,13 @@ import React from 'react';
 import './styles.css';
 
 const cursorStyle = {
-	cursor: 'pointer'
-}
+	cursor: 'pointer',
+};
 
 const Footer = ({ setPage }) => {
 	return (
 		<section className="footer">
 			<div className="footer-container">
-				{/* Left Section */}
 				<div className="footer-left">
 					<a href="/" aria-current="page">
 						<div className="logo">boco</div>
@@ -19,32 +18,19 @@ const Footer = ({ setPage }) => {
 						chat.
 					</div>
 					<div className="social-icons">
-						<a
-							href="https://www.instagram.com/boco.agency/"
-							target="_blank"
-							className="social-link"
-						>
-							<img
-								src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6706351059ed547b7733da1b_Vector%20(12).svg"
-								alt="Instagram"
-								className="social-icon"
-							/>
-						</a>
-						<a
-							href="https://www.linkedin.com/company/boco-ventures/"
-							target="_blank"
-							className="social-link"
-						>
-							<img
-								src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6731b34f0fce48fafa0ab302_basil_linkedin-solid.png"
-								alt="LinkedIn"
-								className="social-icon"
-							/>
-						</a>
+						<img
+							src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6706351059ed547b7733da1b_Vector%20(12).svg"
+							alt="Instagram"
+							className="social-icon"
+						/>
+						<img
+							src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6731b34f0fce48fafa0ab302_basil_linkedin-solid.png"
+							alt="LinkedIn"
+							className="social-icon"
+						/>
 					</div>
 				</div>
 
-				{/* Right Section */}
 				<div className="footer-right">
 					<div>
 						<h4 className="footer-heading">Products</h4>
@@ -65,7 +51,6 @@ const Footer = ({ setPage }) => {
 				</div>
 			</div>
 
-			{/* Footer Bottom */}
 			<div className="footer-divider"></div>
 			<div className="footer-bottom">
 				<div className="footer-text">© Copyright, BOCO 2024</div>

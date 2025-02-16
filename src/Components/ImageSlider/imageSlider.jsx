@@ -2,6 +2,17 @@ import { useRef } from 'react';
 import './styles.css';
 import { BE_URL } from '../../App';
 
+const images = [
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb944f95811e3e779e6f_Card%20Image.png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb94defd4d3938d13ab8_Card%20Image-1.png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb976fa22091601dfe7e_Card%20Image-2.png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb956fa22091601dfcb6_Card%20Image-2%20(1).png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb97b6cb7fa93cf1c553_Card%20Image-3.png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb95fc86a994376369ab_Card%20Image%20(1).png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb9521e7ca61fcf73e2c_Card%20Image-1%20(1).png',
+  'https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6729bb97474d3e3e0852c57b_Card%20Image-4.png',
+];
+
 export default function ImageSlider({ images }) {
   const sliderRef = useRef(null);
 
@@ -19,7 +30,7 @@ export default function ImageSlider({ images }) {
 
   return (
     <div className="image-slider-wrapper">
-      <div onClick={scrollLeft}>
+      <div style={{ cursor: 'pointer' }} onClick={scrollLeft}>
         <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
           <circle cx="24" cy="24" r="24" fill="#D3C3F8" />
           <path
@@ -35,16 +46,12 @@ export default function ImageSlider({ images }) {
         {images.map((data, index) => (
           <div key={index} className="image-card">
             <div className="image-content">
-              <img
-                src={`${BE_URL}${data?.image?.url}`}
-                alt={data.name}
-                className="image"
-              />
+              <img src={data.src} alt={data.name} className="image" />
             </div>
           </div>
         ))}
       </div>
-      <div onClick={scrollRight}>
+      <div style={{ cursor: 'pointer' }} onClick={scrollRight}>
         <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
           <circle cx="24" cy="24" r="24" fill="#D3C3F8" />
           <path

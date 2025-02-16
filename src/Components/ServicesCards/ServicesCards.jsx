@@ -49,7 +49,7 @@ const ServiceCard = ({ serviceCards }) => {
           <div className="service-details-d2c">
             <img
               loading="eager"
-              src={`${import.meta.env.VITE_BASE_API_URL}${card?.cardImage?.url}`}
+              src={card.cardImageSrc}
               alt={card.iconAlt}
               className="image-208"
             />

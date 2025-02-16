@@ -39,7 +39,7 @@ const Home = ({ setPage, data }) => {
       <Services serviceCards={data.serviceCards || []} />
       <div className="shopify-container">
         <div className="shopify-header">
-          <div className="hero-title">{data.caseStudies?.title}</div>
+          <div className="hero-title">Read our recent Case Studies</div>
         </div>
         <div className="case-studies-imgs">
           <CaseStudyList data={data.caseStudies} />

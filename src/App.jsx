@@ -77,14 +77,12 @@ function App() {
   });
 
   useEffect(() => {
-    setPageLoading(true);
-
     Promise.all([
       getFetch('service-cards').then((res) => res.json()),
       getFetch('quote').then((res) => res.json()),
       getFetch('brands-logos').then((res) => res.json()),
       getFetch('web-design-works').then((res) => res.json()),
-      getFetch('case-study').then((res) => res.json()),
+      getFetch('case-studies').then((res) => res.json()),
     ])
       .then(([serviceCards, quote, brandsLogos, webDesignWorkImages, caseStudies]) => {
         setData({
@@ -102,8 +100,6 @@ function App() {
         setPageLoading(false);
       });
   }, []);
-
-  console.log({ data });
 
   if (pageLoading) {
     return <Loader />;

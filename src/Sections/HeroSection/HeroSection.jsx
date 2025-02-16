@@ -15,7 +15,7 @@ const HeroSection = () => {
 					</div>
 					<p className="hero-description">
 						We're a leading Shopify & Shopify Plus agency who design
-						and develop strategic ecommerce websites.
+						and develop strategic ecommerce websites
 					</p>
 					<div className="hero-features">
 						<div className="feature-item">

@@ -101,8 +101,14 @@ function App() {
       });
   }, []);
 
-  if (pageLoading) {
-    return <Loader />;
+  if (!pageLoading) {
+    return (
+      <div
+        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}
+      >
+        <Loader />
+      </div>
+    );
   }
 
   const propsForBurgerMenu = {

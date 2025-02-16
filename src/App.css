@@ -1,6 +1,6 @@
 .page-container {
-  margin-left: 198px;
-  margin-right: 198px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .destop-header-view {
@@ -50,13 +50,12 @@
   pointer-events: auto;
 }
 
-
 .menu-btn {
   color: #140152;
   font-family: Plus Jakarta Sans, sans-serif;
   font-weight: 300;
   line-height: 24px;
-  font-size:16px;
+  font-size: 16px;
   padding: 8px 28px;
   text-align: left;
   text-transform: capitalize;
@@ -69,7 +68,7 @@
 
 .menu-btn:hover {
   background-color: #f6f3ff;
-  transition: 0.2s ease-in-out
+  transition: 0.2s ease-in-out;
 }
 
 .selected {
@@ -83,20 +82,17 @@
   }
 }
 
-
 @media screen and (max-width: 992px) {
   .destop-header-view {
-    display: none !important
+    display: none !important;
   }
   .mobile-header-view {
     display: flex !important;
     padding: 8px 16px;
-
   }
   .shopify-description {
     text-align: left;
   }
   .hero-title {
-
   }
 }

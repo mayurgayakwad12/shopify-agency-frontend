@@ -31,16 +31,18 @@
 .hero-description {
   font-size: 20px;
   color: #060237;
-  margin-bottom: 20px;
-  font-weight: 400;
+  margin: 24px 0px;
+  line-height: normal;
+  font-weight: 500;
 }
 
 .hero-features {
-  margin-bottom: 20px;
-  color: #060237;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: left;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    color: #060237;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
 }
 
 .feature-item {

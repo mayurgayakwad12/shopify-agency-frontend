@@ -101,7 +101,7 @@ function App() {
       });
   }, []);
 
-  if (!pageLoading) {
+  if (pageLoading) {
     return (
       <div
         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}
